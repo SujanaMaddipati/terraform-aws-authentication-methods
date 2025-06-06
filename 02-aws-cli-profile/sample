@@ -1,0 +1,7 @@
+for folder in 01-access-keys 02-aws-cli-profile 03-env-vars 04-aws-sso 05-sts-assume-role; do
+    echo '# Terraform Code' > "$folder/main.tf"
+    echo "# ${folder//-/ }" > "$folder/README.md"
+done
+
+echo "# Terraform AWS Authentication Methods" > README.md
+
